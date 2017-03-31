@@ -1,0 +1,6 @@
+<div class="Item"
+  ng-style="{ color: isSelected ? 'red' : 'black' }"
+  ng-click="onClick({ uid: user.id })"
+  ng-dblclick="onDelete({ uid: user.id })">
+  {{user.id}} - {{user.name}}
+</div>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ng</title>
+</head>
+<body>
+  
+  <div ng-app="app">
+    <div ng-controller="DemoCtrl">
+      <list>
+        <item
+          is-selected="item.id == selectedId"
+          ng-repeat="item in users"
+          user="item"
+          on-click="onSelect(uid)"
+          on-delete="onDelete(uid)" />
+      </list>
+    </div>
+  </div>
+
+  <script src="./node_modules/angular/angular.js"></script>
+  <script src="./app.js"></script>
+  <script src="./templates.js"></script>
+</body>
+</html>
