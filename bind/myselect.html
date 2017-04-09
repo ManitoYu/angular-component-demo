@@ -1,0 +1,9 @@
+<div class="myselect" style="background: #ccc">
+  <input ng-model="value" ng-change="onChangeInput()" ng-click="isActive = !isActive" />
+  <ul ng-style="{ display: isActive ? 'block' : 'none' }">
+    <li ng-click="onChange(item)"
+      ng-style="{ color: value == item ? '#f00' : '#000' }"
+      ng-repeat="item in filterItems">{{item}}
+    </li>
+  </ul>
+</div>
