@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ng</title>
+</head>
+<body>
+  
+  <div ng-app="app" ng-controller="demoCtrl">
+    {{value}}
+    <autocomplete items="items" value="value">
+      <item-template>
+        <span>{{item}}</span>
+        <span>{{$index}}</span>
+      </item-template>
+    </autocomplete>
+  </div>
+
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+  <script src="../node_modules/angular/angular.js"></script>
+  <script src="./app.js"></script>
+  <script src="./templates.js"></script>
+</body>
+</html>
